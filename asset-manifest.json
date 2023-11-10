@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/miraplay_test_client/static/css/main.ef091abe.css",
+    "main.js": "/miraplay_test_client/static/js/main.31f44609.js",
+    "static/media/NeueMachina-Black.eot": "/miraplay_test_client/static/media/NeueMachina-Black.e80dfe8ab92b9140abf5.eot",
+    "static/media/NeueMachina-Black.ttf": "/miraplay_test_client/static/media/NeueMachina-Black.014654455cfb26c46c76.ttf",
+    "static/media/NeueMachina-Ultralight.eot": "/miraplay_test_client/static/media/NeueMachina-Ultralight.7db092654583b2c71beb.eot",
+    "static/media/NeueMachina-Medium.eot": "/miraplay_test_client/static/media/NeueMachina-Medium.61f6595ee66e011a67e2.eot",
+    "static/media/NeueMachina-Regular.eot": "/miraplay_test_client/static/media/NeueMachina-Regular.828898a473bf3c1e48bb.eot",
+    "static/media/NeueMachina-Light.eot": "/miraplay_test_client/static/media/NeueMachina-Light.b15b1228669684161654.eot",
+    "static/media/NeueMachina-Ultrabold.eot": "/miraplay_test_client/static/media/NeueMachina-Ultrabold.747ec42760eb3eff05d5.eot",
+    "static/media/NeueMachina-Ultralight.ttf": "/miraplay_test_client/static/media/NeueMachina-Ultralight.e874e80d189631c23632.ttf",
+    "static/media/NeueMachina-Medium.ttf": "/miraplay_test_client/static/media/NeueMachina-Medium.f720034f1ca535bd98d9.ttf",
+    "static/media/NeueMachina-Regular.ttf": "/miraplay_test_client/static/media/NeueMachina-Regular.4dc4b2a360a973d59975.ttf",
+    "static/media/NeueMachina-Light.ttf": "/miraplay_test_client/static/media/NeueMachina-Light.28c93e08edca1900c014.ttf",
+    "static/media/NeueMachina-Ultrabold.ttf": "/miraplay_test_client/static/media/NeueMachina-Ultrabold.e7dc54d6addc0790114b.ttf",
+    "static/media/NeueMachina-Bold.eot": "/miraplay_test_client/static/media/NeueMachina-Bold.3276e5ef9d086cd11b4d.eot",
+    "static/media/NeueMachina-Bold.ttf": "/miraplay_test_client/static/media/NeueMachina-Bold.e3f0d560c71e5363d34c.ttf",
+    "static/media/NeueMachina-Black.woff": "/miraplay_test_client/static/media/NeueMachina-Black.b45c4f42f6534208c825.woff",
+    "static/media/NeueMachina-Ultralight.woff": "/miraplay_test_client/static/media/NeueMachina-Ultralight.a5c9b9019f7521de91da.woff",
+    "static/media/NeueMachina-Regular.woff": "/miraplay_test_client/static/media/NeueMachina-Regular.d64094f47aa8215253c6.woff",
+    "static/media/NeueMachina-Bold.woff": "/miraplay_test_client/static/media/NeueMachina-Bold.2bfbac370b6a890c274f.woff",
+    "static/media/NeueMachina-Medium.woff": "/miraplay_test_client/static/media/NeueMachina-Medium.555886485bb6db5dfd0f.woff",
+    "static/media/NeueMachina-Ultrabold.woff": "/miraplay_test_client/static/media/NeueMachina-Ultrabold.6efca1e13bdf1ea0768b.woff",
+    "static/media/NeueMachina-Light.woff": "/miraplay_test_client/static/media/NeueMachina-Light.c3cdeaf9df18dada7dfe.woff",
+    "static/media/NeueMachina-Black.woff2": "/miraplay_test_client/static/media/NeueMachina-Black.a5d08d03e9e32b9c1224.woff2",
+    "static/media/NeueMachina-Ultralight.woff2": "/miraplay_test_client/static/media/NeueMachina-Ultralight.f86fd9a54ade02fc6eff.woff2",
+    "static/media/NeueMachina-Regular.woff2": "/miraplay_test_client/static/media/NeueMachina-Regular.2dabb3622c2ec78c26ea.woff2",
+    "static/media/NeueMachina-Bold.woff2": "/miraplay_test_client/static/media/NeueMachina-Bold.d49ee994b16c7a8be96e.woff2",
+    "static/media/NeueMachina-Medium.woff2": "/miraplay_test_client/static/media/NeueMachina-Medium.a9b17f3a7d0e2486822d.woff2",
+    "static/media/NeueMachina-Ultrabold.woff2": "/miraplay_test_client/static/media/NeueMachina-Ultrabold.5310e4a5401b5d25eeba.woff2",
+    "static/media/NeueMachina-Light.woff2": "/miraplay_test_client/static/media/NeueMachina-Light.418f63ac88af6ed51de9.woff2",
+    "index.html": "/miraplay_test_client/index.html",
+    "main.ef091abe.css.map": "/miraplay_test_client/static/css/main.ef091abe.css.map",
+    "main.31f44609.js.map": "/miraplay_test_client/static/js/main.31f44609.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef091abe.css",
+    "static/js/main.31f44609.js"
+  ]
+}
