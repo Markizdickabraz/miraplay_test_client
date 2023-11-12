@@ -1,0 +1,152 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+    /*height: 650px;*/
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, #181818 100%),
+      url("../../img/head-bg.png");
+    background-size: cover;
+  }
+  .content {
+    position: relative;
+    margin-top: 75px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+
+    padding: 50px 20px;
+    padding-bottom: 100px;
+  }
+  .leftSide {
+    width: 100%;
+    height: 100%;
+  }
+  .navInfo {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 143%;
+
+    color: #afafaf;
+    margin-bottom: 14px;
+  }
+  .title {
+    margin-bottom: 24px;
+    width: 80%;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 125%;
+
+    color: #eaeaea;
+    text-transform: uppercase;
+  }
+  .titleLogo {
+    width: 20px;
+    height: 20px;
+    fill: #6d6d6d;
+  }
+  .description {
+    width: 100%;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 170%;
+
+    color: #afafaf;
+  }
+  .description span {
+    font-weight: 800;
+    color: #ffffff;
+  }
+  .rightSide {
+    background-image: url("../../img/head-bg.png");
+    width: 100%;
+    height: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* //----------------------------------------------------------------------TABLET----------------------------------------------------- */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+} /* "//-------------------------------------------------------DESKTOP----------------------------------------------------------------- */
+@media (min-width: 1200px) {
+  .container {
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, #181818 100%),
+      url("../../img/head-bg.png");
+    background-size: cover;
+  }
+  .content {
+    position: relative;
+    margin-top: 90px;
+    width: 1175px;
+    height: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .leftSide {
+    width: 50%;
+    height: 100%;
+    padding-top: 100px;
+    padding-left: 10px;
+  }
+  .navInfo {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    /* identical to box height, or 143% */
+
+    /* text-align: center; */
+    color: #afafaf;
+    margin-bottom: 14px;
+  }
+  .title {
+    margin-bottom: 24px;
+    width: 470px;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 125%;
+
+    color: #eaeaea;
+    text-transform: uppercase;
+  }
+  .titleLogo {
+    width: 33px;
+    height: 33px;
+    fill: #6d6d6d;
+  }
+  .description {
+    width: 420px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 34px;
+    /* or 170% */
+    color: #eaeaea;
+  }
+  .description span {
+    font-weight: 800;
+    color: #ffffff;
+  }
+  .rightSide {
+    position: absolute;
+    right: 0;
+    top: 53%;
+    transform: translateY(-50%);
+    background-image: url("../../img/game_lib_bg.png");
+    width: 54%;
+    height: 510px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.hero_content {
+  width: 100%;
+}

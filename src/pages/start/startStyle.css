@@ -1,0 +1,98 @@
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .start_container {
+    width: 100%;
+    /*height: 650px;*/
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, #181818 100%),
+      url("../../img/head-bg.png");
+    background-size: cover;
+  }
+  .start_title {
+    padding-top: 40%;
+    margin-bottom: 24px;
+    width: 80%;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 125%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #eaeaea;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .start_btn-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .btn {
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    color: white;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+
+  .btn:hover {
+    background-color: #3f9c14;
+    transition: all 0.2s linear;
+    border: 1px solid #3f9c14;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .start_container {
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, #181818 100%),
+      url("../../img/head-bg.png");
+    background-size: cover;
+  }
+
+  .start_title {
+    margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20%;
+    width: 800px;
+    font-weight: 800;
+    font-size: 54px;
+    line-height: 125%;
+    color: #eaeaea;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .start_btn-container {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+
+  .btn {
+    width: 200px;
+    height: 60px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    border-radius: 10px;
+  }
+
+  .btn:hover {
+    background-color: #3f9c14;
+    transition: all 0.2s linear;
+    border: 1px solid #3f9c14;
+    box-shadow: 1px 3px 4px #3f9c14;
+  }
+}
