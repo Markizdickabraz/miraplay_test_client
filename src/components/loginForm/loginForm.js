@@ -12,7 +12,7 @@ export const LoginForm = () => {
   const navigate = useNavigate();
 
     const handleSubmit = async (values, { setSubmitting }) => {
-      dispatch(logIn(values));
+      dispatch(logIn(values)); 
       setSubmitting(false);
       console.log(token);
     if (token !== null) {
@@ -20,7 +20,7 @@ export const LoginForm = () => {
     }
   };
          return (
-          <div className='form_container'>
+          <div className='form_container'> 
           <h2 className='form_title'>Вхід</h2>
              <Formik
       initialValues={initialValues}

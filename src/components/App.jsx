@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
-// import { Home } from '../pages/home/home';
+import { Home } from '../pages/home/home';
 import { Start } from '../pages/start/start';
 import { Register } from '../pages/register/register';
 import { Login } from '../pages/login/login';
@@ -14,7 +14,7 @@ const App = () => {
       <Route path="/login" element={<Login />} />
        <Route
           path="/home"
-          element={<PrivateRoute redirectTo="/login" component={<Login />} />}
+          element={<PrivateRoute redirectTo="/login" component={<Home />} />}
         />
     </Routes>)
 }

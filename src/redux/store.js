@@ -1,4 +1,4 @@
-import { configureStore } from '@reduxjs/toolkit';
+import { configureStore, combineReducers } from '@reduxjs/toolkit';
 
 import {
   persistStore,
@@ -13,6 +13,7 @@ import {
 import storage from 'redux-persist/lib/storage';
 
 import { authReducer } from './authorization/authSlice';
+import { gamesReducer } from './games/gamesSlice';
 
 const persistConfig = {
   key: 'root',
@@ -20,10 +21,13 @@ const persistConfig = {
   whitelist: ['token'],
 };
 
+const rootReducer = combineReducers({
+  auth: persistReducer(persistConfig, authReducer),
+  games: persistReducer(persistConfig, gamesReducer),
+});
+
 const store = configureStore({
-  reducer: {
-    auth: persistReducer(persistConfig, authReducer),
-  },
+  reducer: rootReducer,
   middleware: getDefaultMiddleware =>
     getDefaultMiddleware({
       serializableCheck: {

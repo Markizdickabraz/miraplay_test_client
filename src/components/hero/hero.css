@@ -1,5 +1,5 @@
 @media screen and (min-width: 320px) and (max-width: 767px) {
-  .container {
+  .hero_container {
     width: 100%;
     /*height: 650px;*/
     background: linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, #181818 100%),
@@ -17,11 +17,11 @@
     padding: 50px 20px;
     padding-bottom: 100px;
   }
-  .leftSide {
+  .hero_leftSide {
     width: 100%;
     height: 100%;
   }
-  .navInfo {
+  .hero_navInfo {
     font-weight: 300;
     font-size: 14px;
     line-height: 143%;
@@ -29,7 +29,7 @@
     color: #afafaf;
     margin-bottom: 14px;
   }
-  .title {
+  .hero_title {
     margin-bottom: 24px;
     width: 80%;
     font-weight: 800;
@@ -39,25 +39,24 @@
     color: #eaeaea;
     text-transform: uppercase;
   }
-  .titleLogo {
+  .hero_titleLogo {
     width: 20px;
     height: 20px;
     fill: #6d6d6d;
   }
-  .description {
+  .hero_description {
     width: 100%;
     font-weight: 300;
     font-size: 14px;
     line-height: 170%;
-
     color: #afafaf;
   }
-  .description span {
+  .hero_description-span {
     font-weight: 800;
     color: #ffffff;
   }
-  .rightSide {
-    background-image: url("../../img/head-bg.png");
+  .hero_rightSide {
+    background-image: url("../../img/game_lib_bg.png");
     width: 100%;
     height: 300px;
     background-size: contain;
@@ -71,8 +70,8 @@
 /* //----------------------------------------------------------------------TABLET----------------------------------------------------- */
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 } /* "//-------------------------------------------------------DESKTOP----------------------------------------------------------------- */
-@media (min-width: 1200px) {
-  .container {
+@media (min-width: 768px) {
+  .hero_container {
     width: 100%;
     height: 650px;
     background: linear-gradient(180deg, rgba(24, 24, 24, 0) 0%, #181818 100%),
@@ -88,13 +87,13 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .leftSide {
+  .hero_leftSide {
     width: 50%;
     height: 100%;
     padding-top: 100px;
     padding-left: 10px;
   }
-  .navInfo {
+  .hero_navInfo {
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
@@ -104,7 +103,7 @@
     color: #afafaf;
     margin-bottom: 14px;
   }
-  .title {
+  .hero_title {
     margin-bottom: 24px;
     width: 470px;
     font-weight: 800;
@@ -114,24 +113,24 @@
     color: #eaeaea;
     text-transform: uppercase;
   }
-  .titleLogo {
+  .hero_titleLogo {
     width: 33px;
     height: 33px;
     fill: #6d6d6d;
   }
-  .description {
+  .hero_description {
     width: 420px;
     font-weight: 300;
     font-size: 20px;
     line-height: 34px;
     /* or 170% */
-    color: #eaeaea;
+    color: #afafaf;
   }
-  .description span {
+  .hero_description-span {
     font-weight: 800;
     color: #ffffff;
   }
-  .rightSide {
+  .hero_rightSide {
     position: absolute;
     right: 0;
     top: 53%;
