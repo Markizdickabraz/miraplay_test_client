@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
-import { popularGames } from '../../redux/games/operations';
-import { selectGames } from '../../redux/games/selectors';
+import { popularGames } from '../../redux/popularGames/operations';
+import { selectGames } from '../../redux/popularGames/selectors';
 import './popularGamesStyle.css'
 
 export const PopularGamesComponent = () => {

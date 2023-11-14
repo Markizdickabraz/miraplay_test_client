@@ -13,7 +13,7 @@ import {
 import storage from 'redux-persist/lib/storage';
 
 import { authReducer } from './authorization/authSlice';
-import { gamesReducer } from './games/gamesSlice';
+import { gamesReducer } from './popularGames/popularGamesSlice';
 
 const persistConfig = {
   key: 'root',
@@ -24,6 +24,7 @@ const persistConfig = {
 const rootReducer = combineReducers({
   auth: persistReducer(persistConfig, authReducer),
   games: persistReducer(persistConfig, gamesReducer),
+  gamesList: persistReducer(persistConfig, gamesReducer),
 });
 
 const store = configureStore({
