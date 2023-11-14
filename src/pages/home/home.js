@@ -1,7 +1,7 @@
 import Header from "../../components/header/header"
 import { HeroComponent } from "../../components/hero/Hero";
 import { PopularGamesComponent } from "../../components/popularGames/popularGames";
-import { GamesList } from "../../components/gamesList/gamesList";
+import { GamesContainer } from "../../components/gamesList/gamesContainer";
 import './home.css';
 
 const Home = () => {
@@ -10,7 +10,7 @@ const Home = () => {
             <Header />
             <HeroComponent />
             <PopularGamesComponent />
-            <GamesList />
+            <GamesContainer />
         </div>
     )
 }

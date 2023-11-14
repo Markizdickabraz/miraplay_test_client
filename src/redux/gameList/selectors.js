@@ -1,1 +1,2 @@
-export const selectGames = state => state.gamesList.items;
+export const selectGamesList = state => state.gamesList.items;
+

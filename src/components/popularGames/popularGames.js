@@ -6,7 +6,7 @@ import './popularGamesStyle.css'
 
 export const PopularGamesComponent = () => {
   const dispatch = useDispatch();
-  const gamesData = useSelector(selectGames); // припущення, що такий шлях існує у вашому редукторі
+  const gamesData = useSelector(selectGames); 
 
   useEffect(() => {
     const fetchData = async () => {

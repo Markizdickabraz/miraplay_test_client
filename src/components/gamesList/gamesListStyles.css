@@ -82,7 +82,7 @@
     display: none;
   } */
 
-  .gamesList {
+  .games_list {
     margin-top: 30px;
     width: 100%;
     display: flex;
@@ -300,7 +300,7 @@
     color: #454545;
   }
 
-  .gamesList {
+  .games_list {
     margin-top: 65px;
     margin-top: 65px;
 
@@ -378,4 +378,428 @@
     gap: 30px;
     margin-top: 65px;
   }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .games_item {
+    position: relative;
+    width: 90vw;
+    height: 565px;
+    background: #1c1c1c;
+    border: 1px solid #454545;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: all 0.3s ease-in;
+    opacity: 1;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .itemWithoutButtons {
+    height: 495px;
+  }
+
+  .games_img {
+    width: 100%;
+    height: 335px;
+    min-height: 335px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px 20px 0 0;
+    /*background-size: cover;*/
+  }
+
+  .games_title-container {
+    width: 100%;
+    padding: 32px;
+    padding-top: 15px;
+    height: 100%;
+    text-overflow: ellipsis;
+  }
+
+  .games_title {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 164%;
+
+    color: var(--main-text-color);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .games_text {
+    height: 80px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--second-text-color);
+  }
+
+  .games_genre {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    gap: 8px;
+    display: flex;
+  }
+
+  .genre_item {
+    padding: 5px 10px;
+
+    background: rgba(12, 5, 32, 0.25);
+    backdrop-filter: blur(10px);
+    color: var(--main-text-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .game_is_top {
+    padding: 5px 10px;
+    background: var(--main-green-color);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: var(--main-text-color);
+
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .game_price {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--main-green-color);
+    padding: 5px 10px;
+    color: var(--main-text-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+  /* .launchersIconsList {
+    position: absolute;
+    top: 285px;
+    left: 10px;
+    display: flex;
+    gap: 3px;
+  }
+  .launchersIconsItem {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1c1c1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon {
+    width: 25px;
+    height: 25px;
+    fill: white;
+  }
+  .buttons {
+    width: 100%;
+    display: flex;
+  }
+
+  .btn {
+    position: relative;
+    width: 160px;
+    height: 45px;
+    background: transparent;
+    border: 1px solid #3f9c14;
+    z-index: 10;
+    transition: all 0.3s linear;
+    border-radius: 10px;
+    overflow: hidden;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 143%;
+    color: var(--main-text-color);
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .btn::before {
+    background: var(--main-green-color);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -55%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.5s ease;
+    width: 110%;
+    height: 100%;
+  }
+
+  .btn:hover::before {
+    width: 110%;
+    left: 50%;
+  }
+
+  .btn:last-child {
+    background-color: transparent;
+    border: none;
+  }
+
+  .btn:last-child::before {
+    display: none;
+  }
+
+  .btn:last-child:hover {
+    color: var(--main-green-color);
+    background-color: transparent;
+    transition: all 0.3s linear;
+  }
+
+  .itemSmall {
+    width: 30%;
+    height: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .imgSmall {
+    height: 170px;
+    width: 170px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: all 0.2s linear;
+    border: 1px solid #454545;
+  }
+
+  .imgSmall:hover {
+    transition: all 0.2s linear;
+    opacity: 0.7;
+    background-position: center;
+  }
+
+  .subTitleSmall {
+    width: 100%;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 115%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+} */
+}
+/* "//-------------------------------------------------------DESKTOP----------------------------------------------------------------- */
+@media (min-width: 768px) {
+  .games_item {
+    position: relative;
+    width: 370px;
+    height: 565px;
+    background: #1c1c1c;
+    border: 1px solid #454545;
+    border-radius: 20px;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: all 0.3s ease-in;
+    opacity: 1;
+    overflow: hidden;
+  }
+
+  .itemWithoutButtons {
+    height: 495px;
+  }
+
+  .games_item:hover {
+    background-color: #242424;
+    transition: all 0.3s ease-in;
+    opacity: 0.8;
+  }
+
+  .games_img {
+    width: 100%;
+    height: 335px;
+    min-height: 335px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .games_title-container {
+    width: 101%;
+    padding: 32px;
+    text-overflow: ellipsis;
+  }
+
+  .games_title {
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 36px;
+    /* identical to box height, or 164% */
+    color: var(--main-text-color);
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+
+  .games_text {
+    height: 80px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 18px;
+    color: var(--second-text-color);
+  }
+
+  .games_genre {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    gap: 8px;
+    display: flex;
+  }
+
+  .genre_item {
+    padding: 5px 10px;
+
+    background: rgba(12, 5, 32, 0.25);
+    backdrop-filter: blur(10px);
+    color: var(--main-text-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .game_is_top {
+    padding: 5px 10px;
+    background: var(--main-green-color);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: var(--main-text-color);
+
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .game_price {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--main-green-color);
+    padding: 5px 10px;
+    color: var(--main-text-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+  }
+  /* .launchersIconsList {
+    position: absolute;
+    top: 285px;
+    left: 10px;
+    display: flex;
+    gap: 3px;
+  }
+  .launchersIconsItem {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #1c1c1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon {
+    width: 25px;
+    height: 25px;
+    fill: white;
+  }
+  .buttons {
+    width: 100%;
+    display: flex;
+  }
+
+  .btn {
+    position: relative;
+    width: 160px;
+    height: 45px;
+    background: transparent;
+    border: 1px solid #3f9c14;
+    z-index: 10;
+    transition: all 0.3s linear;
+    border-radius: 10px;
+    overflow: hidden;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 143%;
+    color: var(--main-text-color);
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
+  .btn::before {
+    background: var(--main-green-color);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -55%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.5s ease;
+    width: 110%;
+    height: 100%;
+  }
+
+  .btn:hover::before {
+    width: 110%;
+    left: 50%;
+  }
+
+  .btn:last-child {
+    background-color: transparent;
+    border: none;
+  }
+
+  .btn:last-child::before {
+    display: none;
+  }
+
+  .btn:last-child:hover {
+    color: var(--main-green-color);
+    background-color: transparent;
+    transition: all 0.3s linear;
+  }
+
+  .itemSmall {
+    width: 170px;
+    height: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .imgSmall {
+    height: 170px;
+    width: 170px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    transition: all 0.2s linear;
+    border: 1px solid #454545;
+  }
+
+  .imgSmall:hover {
+    transition: all 0.2s linear;
+    opacity: 0.7;
+  }
+
+  .subTitleSmall {
+    width: 100%;
+    font-weight: 800;
+    font-size: 15px;
+    line-height: 115%;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--main-text-color);
+  } */
 }
