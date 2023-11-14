@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/miraplay_test_client/static/css/main.0387fdb7.css",
-    "main.js": "/miraplay_test_client/static/js/main.117fc784.js",
+    "main.css": "/miraplay_test_client/static/css/main.18a7693c.css",
+    "main.js": "/miraplay_test_client/static/js/main.04fad465.js",
     "static/media/head-bg.png": "/miraplay_test_client/static/media/head-bg.a87c8cac9c4cfb22ab8f.png",
     "static/media/game_lib_bg.png": "/miraplay_test_client/static/media/game_lib_bg.ef929dc45c76555c5590.png",
     "static/media/NeueMachina-Black.eot": "/miraplay_test_client/static/media/NeueMachina-Black.e80dfe8ab92b9140abf5.eot",
@@ -33,11 +33,11 @@
     "static/media/NeueMachina-Ultrabold.woff2": "/miraplay_test_client/static/media/NeueMachina-Ultrabold.5310e4a5401b5d25eeba.woff2",
     "static/media/NeueMachina-Light.woff2": "/miraplay_test_client/static/media/NeueMachina-Light.418f63ac88af6ed51de9.woff2",
     "index.html": "/miraplay_test_client/index.html",
-    "main.0387fdb7.css.map": "/miraplay_test_client/static/css/main.0387fdb7.css.map",
-    "main.117fc784.js.map": "/miraplay_test_client/static/js/main.117fc784.js.map"
+    "main.18a7693c.css.map": "/miraplay_test_client/static/css/main.18a7693c.css.map",
+    "main.04fad465.js.map": "/miraplay_test_client/static/js/main.04fad465.js.map"
   },
   "entrypoints": [
-    "static/css/main.0387fdb7.css",
-    "static/js/main.117fc784.js"
+    "static/css/main.18a7693c.css",
+    "static/js/main.04fad465.js"
   ]
 }
