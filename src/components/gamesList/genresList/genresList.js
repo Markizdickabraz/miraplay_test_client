@@ -17,7 +17,10 @@ export const GenresList = () => {
     },[])
     
         function chooseGenres(e) {
-            const id = e.target.id;
+            let id = e.target.id;
+            if (id === "ALL") {
+                id = false;
+            }
         const initialValues = {
         "page": 0,
         "isFreshGamesFirst": true,
@@ -30,7 +33,7 @@ export const GenresList = () => {
 
     return (
           <ul className="genres_list" onClick={chooseGenres}>
-            <li className="genres_item" id='false'>ВСІ</li>
+            <li className="genres_item" id='ALL'>ВСІ</li>
             <li className="genres_item" id='FREE'>Безкоштовне</li>
             <li className="genres_item" id='MOBA'>МОВА</li>
             <li className="genres_item" id='SHOOTERS'>ШУТЕРИ</li>
