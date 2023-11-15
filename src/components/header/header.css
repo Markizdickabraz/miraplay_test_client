@@ -1,19 +1,6 @@
-/*@media screen and (min-width: 320px) and (max-width: 767px) {*/
-
-/*}*/
-
-/*!* //----------------------------------------------------------------------TABLET----------------------------------------------------- *! */
-/*@media screen and (min-width: 768px) and (max-width: 1199px) {*/
-
-/*} !* "//-------------------------------------------------------DESKTOP----------------------------------------------------------------- *! */
-/*@media (min-width: 1200px) {*/
-
-/*}*/
-
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .header {
     width: 100%;
-    /*height: 64px;*/
     position: fixed;
     top: 0;
     left: 0;
@@ -69,12 +56,6 @@
     height: 18px;
     fill: #eaeaea;
   }
-  /*////////////////////////////////////////////////*/
-
-  /* .container {
-    display: none;
-  } */
-
   .header_btnWrap {
     display: none;
   }
@@ -149,7 +130,6 @@
   }
 
   .header_btn:first-child {
-    /* background: #242424; */
     background: transparent;
     border: 1px solid #454545;
   }
@@ -238,7 +218,6 @@
     transform: translateY(-50%);
     right: -50px;
   }
-  /*////////////////////*/
   .header_userBtn {
     display: none;
   }
@@ -310,7 +289,6 @@
   margin-right: 32px;
   color: #afafaf;
   cursor: pointer;
-  /* transition: all 0.2s linear; */
   display: flex;
   align-items: center;
   height: 30px;
@@ -327,11 +305,6 @@
   width: 100%;
   height: 1px;
   background-color: var(--main-green-color);
-
-  /* animation-name: botLine;
-    animation-duration: 0.4s;
-    animation-iteration-count: 1;
-    */
   transition: all 0.3s ease-in-out;
 }
 .header_botLineActive {
@@ -342,16 +315,11 @@
   width: 100%;
   height: 1px;
   background-color: var(--main-green-color);
-  /* animation-name: botLine;
-    animation-duration: 0.4s;
-    animation-iteration-count: 1; */
-
   transition: all 0.3s ease-in-out;
 }
 .header_item:first-child .botLineActive {
   display: none;
 }
-/* this is block of animation bot line of item with content "игры" */
 .header_item:first-child:hover::after {
   width: 0;
   height: 0;
@@ -359,7 +327,6 @@
 .item:first-child {
   font-weight: 700;
   border: 1px solid #454545;
-  /* backdrop-filter: blur(10px); */
   width: 72px;
   height: 42px;
   color: #eaeaea;

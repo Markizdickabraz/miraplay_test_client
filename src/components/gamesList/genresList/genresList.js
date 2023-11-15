@@ -2,12 +2,11 @@ import { gamesList } from "../../../redux/gameList/operations";
 import { useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
 
-export const GenresList = ({ gamesShow, onGenreChange}) => {
+export const GenresList = ({ gamesShow, onGenreChange ,freshGames}) => {
     const dispatch = useDispatch();
     const [selectedGenre, setSelectedGenre] = useState(false);
 
     useEffect(() => {
-
         if (selectedGenre === setSelectedGenre) {
             return;
         }
@@ -20,13 +19,13 @@ export const GenresList = ({ gamesShow, onGenreChange}) => {
 
         const initialValues = {
             "page": 0,
-            "isFreshGamesFirst": true,
+            "isFreshGamesFirst": freshGames,
             "genre": selectedGenre,
             "gamesToShow": gamesShow,
         };
         dispatch(gamesList(initialValues));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [selectedGenre]);
+    }, [selectedGenre, freshGames]);
 
     function chooseGenres(e) {
         const newGenre = e.target.id;

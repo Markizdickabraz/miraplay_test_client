@@ -17,7 +17,7 @@
     margin-bottom: 42px;
   }
 
-  /* .skeletonList {
+  .skeletonList {
     margin-top: 20px;
 
     width: 100%;
@@ -36,7 +36,7 @@
     align-items: center;
     justify-content: center;
     transform: skew(180deg);
-  } */
+  }
 
   .genres_list {
     display: flex;
@@ -63,7 +63,7 @@
     backdrop-filter: blur(10px);
     border-radius: 10px;
   }
-  /* .icon {
+  .icon {
     fill: white;
     width: 20px;
     height: 20px;
@@ -71,16 +71,16 @@
     top: 50%;
     right: 15px;
     transform: translateY(-50%);
-  } */
-  /* .iconSizeType {
+  }
+  .iconSizeType {
     fill: white;
     width: 20px;
     height: 20px;
-  } */
+  }
 
-  /* .filterRightSide {
+  .filterRightSide {
     display: none;
-  } */
+  }
 
   .games_list {
     margin-top: 30px;
@@ -170,7 +170,7 @@
 
     margin-bottom: 42px;
   }
-  /* 
+
   .skeletonList {
     margin-top: 65px;
     margin-top: 65px;
@@ -179,9 +179,9 @@
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-  } */
+  }
 
-  /* .skeletonList li {
+  .skeletonList li {
     width: 370px;
     height: 495px;
     border-radius: 20px;
@@ -191,7 +191,7 @@
     align-items: center;
     justify-content: center;
     transform: skew(180deg);
-  } */
+  }
 
   .genres_list {
     width: 800px;
@@ -218,11 +218,11 @@
     border-radius: 10px;
   }
 
-  /* .genresList_item:last-child {
+  .genresList_item:last-child {
     padding-right: 40px;
-  } */
+  }
 
-  /* .icon {
+  .icon {
     fill: white;
     width: 20px;
     height: 20px;
@@ -261,7 +261,7 @@
     line-height: 143%;
     text-align: center;
     color: var(--second-text-color);
-  } */
+  }
 
   .select {
     width: 150px;
@@ -480,7 +480,7 @@
     display: flex;
     align-items: center;
   }
-  /* .launchersIconsList {
+  .launchersIconsList {
     position: absolute;
     top: 285px;
     left: 10px;
@@ -588,7 +588,7 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--main-text-color);
-} */
+  }
 }
 /* "//-------------------------------------------------------DESKTOP----------------------------------------------------------------- */
 @media (min-width: 768px) {
@@ -694,7 +694,7 @@
     display: flex;
     align-items: center;
   }
-  /* .launchersIconsList {
+  .launchersIconsList {
     position: absolute;
     top: 285px;
     left: 10px;
@@ -792,7 +792,6 @@
     transition: all 0.2s linear;
     opacity: 0.7;
   }
-
   .subTitleSmall {
     width: 100%;
     font-weight: 800;
@@ -801,5 +800,16 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--main-text-color);
-  } */
+  }
+}
+.filterRightSideSoft {
+  display: flex;
+}
+
+.date_title {
+  color: #afafaf;
+}
+
+.date_text {
+  color: #aeaeae;
 }

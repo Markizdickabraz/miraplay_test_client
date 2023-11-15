@@ -1,6 +1,18 @@
 import './header.css';
+import { useDispatch} from "react-redux";
+import { logOut } from '../../redux/authorization/operations';
+import { useNavigate } from 'react-router-dom';
+
 
 const Header = () => {
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+
+      const handleLogout = () => {
+        dispatch(logOut());
+        return navigate('/login');
+
+  };
     return (
         <header className='header'>
              <div className="header_container">
@@ -25,8 +37,8 @@ const Header = () => {
                             <use href="/static/media/symbol.4050e793240adea219122f2b47914225.svg#icon-search"></use>
                         </svg>
                     </div>
-                    <button className='header_btn'>
-                        <div className='header_Avatar'>М</div>
+                    <button className='header_btn' onClick={handleLogout}>
+                        <div className='header_Avatar'><p>Quit</p></div>
                     </button>
                     <button className='header_btn'>
                         ЗАВАНТАЖИТИ КЛІЄНТ
