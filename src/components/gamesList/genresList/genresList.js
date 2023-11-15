@@ -1,39 +1,62 @@
 import { gamesList } from "../../../redux/gameList/operations";
 import { useDispatch } from "react-redux";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export const GenresList = () => {
-        const dispatch = useDispatch();
+    const dispatch = useDispatch();
+    const [selectedGenre, setSelectedGenre] = useState('ALL');
 
     useEffect(() => {
+        
         const initialValues = {
-        "page": 0,
-        "isFreshGamesFirst": true,
-        "genre": false ,
-        "gamesToShow": 9,
-        }
-        dispatch(gamesList(initialValues))
+            "page": 0,
+            "isFreshGamesFirst": true,
+            "genre": false,
+            "gamesToShow": 9,
+        };
+        dispatch(gamesList(initialValues));
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    },[])
-    
-        function chooseGenres(e) {
-            let id = e.target.id;
-            if (id === "ALL") {
-                id = false;
-            }
-        const initialValues = {
-        "page": 0,
-        "isFreshGamesFirst": true,
-        "genre": id ,
-        "gamesToShow": 9,
+    }, [ ]);
+
+    useEffect(() => {
+       
+        if (selectedGenre === 'ALL') {
+            setSelectedGenre(false);
         }
-            dispatch(gamesList(initialValues));
-    }
+
+        const initialValues = {
+            "page": 0,
+            "isFreshGamesFirst": true,
+            "genre": selectedGenre,
+            "gamesToShow": 9,
+        };
+        dispatch(gamesList(initialValues));
+    }, [selectedGenre, dispatch]);
+
+    function chooseGenres(e) {
+        const newGenre = e.target.id;
+        console.dir(e.target);
+        if (e.target.nodeName === 'UL') { 
+            return;
+        }
+        else {
+        setSelectedGenre(newGenre); 
+
+            if (selectedGenre === false) {
+                document.getElementById("ALL").classList.remove('selected');
+            }
+            else {
+                document.getElementById(selectedGenre).classList.remove('selected');
+            }
+            
+        e.target.classList.add('selected');
+        }
     
+    }
 
     return (
-          <ul className="genres_list" onClick={chooseGenres}>
-            <li className="genres_item" id='ALL'>ВСІ</li>
+        <ul className="genres_list" onClick={chooseGenres}>
+            <li className="genres_item selected" id='ALL'>ВСІ</li>
             <li className="genres_item" id='FREE'>Безкоштовне</li>
             <li className="genres_item" id='MOBA'>МОВА</li>
             <li className="genres_item" id='SHOOTERS'>ШУТЕРИ</li>
@@ -45,5 +68,5 @@ export const GenresList = () => {
             <li className="genres_item" id='SURVIVAL'>ВИЖИВАННЯ</li>
             <li className="genres_item" id='ONLINE'>ОНЛАЙН</li>
         </ul>
-    )
+    );
 }
