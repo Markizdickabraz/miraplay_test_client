@@ -1,14 +1,9 @@
-import { useSelector } from 'react-redux';
-import { selectGamesList } from '../../../redux/gameList/selectors';
 
-export const GamesList = () => {
 
-    const gamesData = useSelector(selectGamesList); 
-    const result = gamesData.games;
-    
+export const GamesList = ({result, gamesShow}) => {
     return (
         <ul className='games_list'>
-            {result && result.slice(0, 9).map(({ _id, gameDescription, gameImage, genre, commonGameName, intop, gameClass }) =>
+            {result && result.slice(0, gamesShow).map(({ _id, gameDescription, gameImage, genre, commonGameName, intop, gameClass }) =>
              (
     <li className='games_item itemWithoutButtons' key={_id}>
       <img src={gameImage} alt={commonGameName} className='games_img' />

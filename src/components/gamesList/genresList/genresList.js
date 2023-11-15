@@ -2,46 +2,40 @@ import { gamesList } from "../../../redux/gameList/operations";
 import { useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
 
-export const GenresList = () => {
+export const GenresList = ({ gamesShow, onGenreChange}) => {
     const dispatch = useDispatch();
-    const [selectedGenre, setSelectedGenre] = useState('ALL');
+    const [selectedGenre, setSelectedGenre] = useState(false);
 
     useEffect(() => {
-        
-        const initialValues = {
-            "page": 0,
-            "isFreshGamesFirst": true,
-            "genre": false,
-            "gamesToShow": 9,
-        };
-        dispatch(gamesList(initialValues));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [ ]);
 
-    useEffect(() => {
-       
+        if (selectedGenre === setSelectedGenre) {
+            return;
+        }
+
         if (selectedGenre === 'ALL') {
             setSelectedGenre(false);
         }
+
+        onGenreChange(selectedGenre, setSelectedGenre);
 
         const initialValues = {
             "page": 0,
             "isFreshGamesFirst": true,
             "genre": selectedGenre,
-            "gamesToShow": 9,
+            "gamesToShow": gamesShow,
         };
         dispatch(gamesList(initialValues));
-    }, [selectedGenre, dispatch]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [selectedGenre]);
 
     function chooseGenres(e) {
         const newGenre = e.target.id;
-        console.dir(e.target);
         if (e.target.nodeName === 'UL') { 
             return;
         }
         else {
-        setSelectedGenre(newGenre); 
-
+            setSelectedGenre(newGenre); 
+            
             if (selectedGenre === false) {
                 document.getElementById("ALL").classList.remove('selected');
             }
@@ -51,7 +45,6 @@ export const GenresList = () => {
             
         e.target.classList.add('selected');
         }
-    
     }
 
     return (
